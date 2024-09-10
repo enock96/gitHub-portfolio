@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4efef;
     color: #333;
     line-height: 1.6;
 }
@@ -18,11 +18,11 @@ body {
 }
 
 header {
-    background: #333;
+    background: #0b0b0b;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    border-bottom: #0863b8 3px solid;
 }
 
 header h1 {
@@ -47,7 +47,7 @@ section {
 
 footer {
     background: #333;
-    color: #fff;
+    color: #f1f0f0;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
