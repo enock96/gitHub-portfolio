@@ -5,50 +5,132 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4efef;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
     line-height: 1.6;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+/* Navigation bar */
+.navbar {
+    margin-bottom: 30px;
 }
 
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+.nav-link.btn-outline-primary {
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+}
+
+/* Header */
 header {
-    background: #0b0b0b;
+    background: #270f57;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0863b8 3px solid;
+    padding: 60px 0;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
 header p {
-    text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
 section {
-    padding: 20px 0;
+    padding: 60px 0;
     text-align: center;
 }
 
-#about, #skills, #experience {
-    background: #fff;
+section h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
+/* Skills List */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Accordion */
+.accordion-button {
+    background-color: #270f57;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #270f57;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+}
+
+/* Footer */
 footer {
-    background: #333;
-    color: #f1f0f0;
+    background: #343a40;
+    color: #f8f9fa;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Button Hover Effects */
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
