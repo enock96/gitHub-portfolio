@@ -5,56 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Enock Musyoki Mutuku | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="enock-portfolio.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Enock Musyoki Mutuku</h1>
-            <p>Computer Science Graduate | Data Scientist | AWS Cloud Practitioner</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Enock's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Enock Musyoki Mutuku, a computer science graduate with experience in Data Science and AWS Cloud. I have a diverse technical support background across multiple companies.</p>
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">Hi, I'm Enock Musyoki Mutuku, a computer science graduate with a passion for Data Science and AWS Cloud solutions. I have experience in technical support across various companies.</p>
         </div>
     </section>
 
-    <section id="skills">
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Science</li>
-                <li>Python, Pandas, SQL</li>
-                <li>AWS Cloud Practitioner</li>
-                <li>Technical Support</li>
-                <li>Network Troubleshooting</li>
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Proficient in Python, SQL, Pandas, and Data Analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">AWS Cloud Practitioner</h5>
+                            <p class="card-text">Certified in AWS Cloud services, network configurations, and security best practices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Support</h5>
+                            <p class="card-text">Expertise in network troubleshooting, software installation, and system support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Volunteer - Hephzibah Mercy Ministry (CBO)</li>
+                <li class="list-group-item">Data Analyst - Pan African Research Services</li>
             </ul>
         </div>
     </section>
 
-    <section id="experience">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
         <div class="container">
-            <h2>Experience</h2>
-            <p><strong>Hephzibah Mercy Ministry (CBO)</strong> - Volunteer</p>
-            <p><strong>Pan African Research Services</strong> - Data Analyst</p>
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">Feel free to reach out via email or LinkedIn for any inquiries or collaborations!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/enock-musyoki-mutuku">linkedin.com/in/enock-musyoki-mutuku</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Enock Musyoki Mutuku. All Rights Reserved.</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Enock Musyoki Mutuku. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
